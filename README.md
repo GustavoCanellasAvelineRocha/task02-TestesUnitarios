@@ -66,7 +66,7 @@ Tive uma dificuldade para testar as mudanças de context integrado com as págin
 
 ![image](https://github.com/GustavoCanellasAvelineRocha/task02-TestesUnitarios/assets/125305894/4eacb6da-6de7-41d6-87f9-e36495c37fb7)
 
-Além disso, não fiz testes muito complexos, pois, novamente, o context dificultou esses testes, assim fiz os testes de renderização de todos componentes e da navegação com os links
+Além disso, a falta de mudaça de state dos provinders dos context me limitou aos testes mockados, não conseguindo realizar alguns testes que gostaria.
 
 ## Coverage
 
