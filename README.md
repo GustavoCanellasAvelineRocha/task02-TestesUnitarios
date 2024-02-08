@@ -8,6 +8,8 @@
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-instalação-do-projeto">Instalação do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#eventos-testes">Eventos Testes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#considerações">Considerações</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#coverage">Coverage</a>&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -35,7 +37,7 @@ Passo a passo:
 
 Este projeto foi criado para realizar a Task 02 - Escrevendo Testes Unitários com Testing Library, para isso, utilizei a Testing Library para realizar os testes unitarios e ter o máximo possivel de coverage.
 
-## Eventos teste
+## Eventos testes
 
 - Component Card:
 Evento 1: Os campos do Personagem e os botões de adicionar favorito devem estar renderizado em tela.  
