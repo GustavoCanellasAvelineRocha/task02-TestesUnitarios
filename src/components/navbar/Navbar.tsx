@@ -13,7 +13,7 @@ export default function NavBar(props: props) {
           <h1>
             <Link to="/">Favoritos GOT</Link>
           </h1>
-          <Link to={props.link}>{props.label}</Link>
+          <Link to={props.link} data-testid="link">{props.label}</Link>
       </Header>
     </>
   );

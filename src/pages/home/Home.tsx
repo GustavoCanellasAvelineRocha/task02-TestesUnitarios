@@ -1,18 +1,15 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import { CharacterContext } from "../../context/CharacterContext";
 import { Container } from "../../components/container/Container";
-import { Card } from "../../components/card/Card";
 import { ContainerCard } from "../../components/card/ContainerCards";
 import { Main } from "../../components/main/main";
-import { FavoriteContext } from "../../context/FavoriteContext";
-import { Button } from "../../components/button/Button";
 import Footer from "../../components/footer/Footer";
+import Card from "../../components/card/Card";
 
 export default function Home() {
   const { CharacterData, getAllCharacters } = useContext(CharacterContext);
-  const { addFavorite, existsFavorite, removeFavorite } =
-    useContext(FavoriteContext);
 
   useEffect(() => {
     getAllCharacters();
@@ -34,21 +31,7 @@ export default function Home() {
           </p>
           <ContainerCard>
             {CharacterData?.map((character) => (
-              <Card key={character.id}>
-                <img src={character.imageUrl} alt={character.image} />
-                <p>
-                  {character.firstName} <strong>{character.lastName}</strong>
-                </p>
-                {existsFavorite(character) ? (
-                  <Button onClick={() => removeFavorite(character.id)}>
-                    Remover dos favoritos
-                  </Button>
-                ) : (
-                  <Button onClick={() => addFavorite({ ...character })}>
-                    Adicionar aos favoritos
-                  </Button>
-                )}
-              </Card>
+              <Card {...character} key={character.id}></Card>
             ))}
           </ContainerCard>
         </Main>

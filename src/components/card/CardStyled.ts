@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const ContainerFavorite = styled.section`
+export const CardStyled = styled.div`
   width: 100%;
-  margin: 10px;
+  max-width: 350px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -10,7 +10,6 @@ export const ContainerFavorite = styled.section`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  gap: 1rem;
   border: 1px solid #ddd;
   background-color: ${(props) => props.theme.baseCard};
 
@@ -27,12 +26,9 @@ export const ContainerFavorite = styled.section`
     margin-bottom: 10px;
   }
 
-  h3 {
-    color: ${(props) => props.theme.text};
-    font-size: 1.25rem;
-  }
-
   p {
     color: ${(props) => props.theme.text};
+    font-size: 1.25rem;
+    margin-bottom: 20px;
   }
 `;

@@ -1,16 +1,14 @@
 import { useContext } from "react";
-
 import { Container } from "../../components/container/Container";
 import { Main } from "../../components/main/main";
 import { FavoriteContext } from "../../context/FavoriteContext";
 import Navbar from "../../components/navbar/Navbar";
-import { ContainerFavorite } from "../../components/containerFavorite/ContainerFavorite";
 import Footer from "../../components/footer/Footer";
-import { Button } from "../../components/button/Button";
 import { EmptyListWarning } from "../../components/emptyListWarning/EmptyListWarning";
+import ContainerFavorite from "../../components/containerFavorite/ContainerFavorite";
 
 export default function Home() {
-  const { favorites, removeFavorite } = useContext(FavoriteContext);
+  const { favorites } = useContext(FavoriteContext);
 
   return (
     <>
@@ -24,24 +22,13 @@ export default function Home() {
           </p>
           {favorites.length > 0 ? (
             favorites.map((character) => (
-              <ContainerFavorite key={character.id}>
-                <img src={character.imageUrl} alt="" />
-                <h3>
-                  {character.firstName} <strong>{character.lastName}</strong>
-                </h3>
-                <p>
-                  Casa: <strong>{character.family}</strong>
-                </p>
-                <p>
-                  Título: <strong>{character.title}</strong>
-                </p>
-                <Button onClick={() => removeFavorite(character.id)}>
-                  Remover dos favoritos
-                </Button>
-              </ContainerFavorite>
+              <ContainerFavorite
+                {...character}
+                key={character.id}
+              ></ContainerFavorite>
             ))
           ) : (
-            <EmptyListWarning>
+            <EmptyListWarning data-testid="text-empty">
               Sua lista de favoritos está <strong>vazia!</strong> Por favor,
               adicione seus favoritos na página inicial!
             </EmptyListWarning>

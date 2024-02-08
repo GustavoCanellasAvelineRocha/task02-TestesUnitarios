@@ -14,10 +14,7 @@ export function FavoriteProvinder({ children }: IChildren) {
   const [favorites, setFavorites] = useState<Character[]>([]);
 
   function addFavorite(newCharacter: Character) {
-    if (!existsFavorite(newCharacter)) {
       setFavorites((state) => [...state, newCharacter]);
-    } else {
-    }
   }
 
   function removeFavorite(idCharaterToDelete: string) {
