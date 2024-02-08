@@ -70,5 +70,11 @@ Além disso, a falta de mudaça de state dos provinders dos context me limitou a
 
 ## Coverage
 
+<h3>Geral</h3>
+
+![image](https://github.com/GustavoCanellasAvelineRocha/task02-TestesUnitarios/assets/125305894/5cb06037-edbd-4b38-9910-9b29b5650385)
+
+<h3>Paginas e components</h3>
+
 ![image](https://github.com/GustavoCanellasAvelineRocha/task02-TestesUnitarios/assets/125305894/787ab330-8aab-42f4-9d7f-f76d0abdea24)
 
