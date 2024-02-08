@@ -39,26 +39,26 @@ Este projeto foi criado para realizar a Task 02 - Escrevendo Testes Unitários c
 
 ## Eventos testes
 
-- Component Card:
-Evento 1: Os campos do Personagem e os botões de adicionar favorito devem estar renderizado em tela.  
-Evento 2: Ao apertar o botão de adicionar o botão remover deve aparecer em tela.
-Evento 3: Ao apertar o botão de adicionar e apertar botão remover o botão de adicionar deve estar em tela.
+- Component Card:<br>
+Evento 1: Os campos do Personagem e os botões de adicionar favorito devem estar renderizado em tela.  <br>
+Evento 2: Ao apertar o botão de adicionar o botão remover deve aparecer em tela.<br>
+Evento 3: Ao apertar o botão de adicionar e apertar botão remover o botão de adicionar deve estar em tela.<br>
 
-- ContainerFavorite Component:
-Evento 1: Os campos do Personagem e os botão de remover favorito devem estar renderizado em tela.
-Evento 2: Os campos devem sumir ao apertar em remover.
+- ContainerFavorite Component:<br>
+Evento 1: Os campos do Personagem e os botão de remover favorito devem estar renderizado em tela.<br>
+Evento 2: Os campos devem sumir ao apertar em remover.<br>
 
-- Pagina Home:
-Evento 1: Os campos do Personagem e os botões de adicionar favorito devem estar renderizado em tela.
-Evento 2: Deve ir para pagina favoritos ao clicar no link.
+- Pagina Home:<br>
+Evento 1: Os campos do Personagem e os botões de adicionar favorito devem estar renderizado em tela.<br>
+Evento 2: Deve ir para pagina favoritos ao clicar no link.<br>
 
-- Pagina Favoritos:
-Evento 1: Os campos do Personagem favorito e os botão de remover favorito devem estar renderizado em tela.
-Evento 2: O campo sem favoritos deve estar renderizado na tela.
-Evento 3: Deve ir para pagina home ao clicar no link.
+- Pagina Favoritos:<br>
+Evento 1: Os campos do Personagem favorito e os botão de remover favorito devem estar renderizado em tela.<br>
+Evento 2: O campo sem favoritos deve estar renderizado na tela.<br>
+Evento 3: Deve ir para pagina home ao clicar no link.<br>
 
-- Pagina NotFound:
-Evento 1: Os campos do notFound devem ser renderizados na tela.
+- Pagina NotFound:<br>
+Evento 1: Os campos do notFound devem ser renderizados na tela.<br>
 
 ## Considerações
 
