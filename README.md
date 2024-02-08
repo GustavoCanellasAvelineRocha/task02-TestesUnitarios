@@ -31,7 +31,7 @@ Passo a passo:
 
 1. Clone o repositório principal.
 2. Execute o comando "npm install" para baixar as dependências.
-3. Execute o comando "npm start" para iniciar o projeto.
+3. Execute o comando "npm test" para iniciar o projeto.
 
 ## 💻 Sobre o Projeto
 
