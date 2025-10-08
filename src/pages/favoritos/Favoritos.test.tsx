@@ -92,4 +92,52 @@ describe("ContainerFavorite Component", () => {
 
     expect(currentUrl).toBe("/");
   });
+  
+  test("Deve chamar a função removeFavorite ao clicar no botão de remover", async () => {
+    const mockRemoveFavorite = jest.fn();
+
+    render(
+      <ThemeProvider theme={defaultTheme}>
+        <CharacterProvider>
+          <FavoriteContext.Provider
+            value={{
+              favorites: [characterDataMocked],
+              addFavorite: jest.fn(),
+              removeFavorite: mockRemoveFavorite,
+              existsFavorite: jest.fn(),
+            }}
+          >
+            <BrowserRouter>
+              <Favoritos />
+            </BrowserRouter>
+          </FavoriteContext.Provider>
+        </CharacterProvider>
+      </ThemeProvider>
+    );
+
+    const removeButton = screen.getByTestId("button-remove-character");
+    await userEvent.click(removeButton);
+
+    expect(mockRemoveFavorite).toHaveBeenCalledWith(characterDataMocked.id);
+  });
+
+  test("A imagem do personagem deve conter src e alt corretos", () => {
+    customRenderMocked();
+
+    const img = screen.getByTestId("img-character") as HTMLImageElement;
+
+    expect(img).toBeInTheDocument();
+    expect(img.src).toBe(characterDataMocked.imageUrl);
+    expect(img.alt.toLowerCase()).toContain(characterDataMocked.firstName.toLowerCase());
+  });
+
+  test("Deve exibir o nome completo do personagem (nome + sobrenome)", () => {
+    customRenderMocked();
+
+    const name = screen.getByTestId("name-character");
+
+    const expectedFullName = `${characterDataMocked.firstName} ${characterDataMocked.lastName}`;
+    expect(name.textContent).toBe(expectedFullName);
+  });
+
 });
